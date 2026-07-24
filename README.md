@@ -1,4 +1,4 @@
-### This repo implements the online extension for the hypothesis testing of the distribution shift - OnlineRFPerm, when the deployed ML model truly need refresh?
+## This repo implements the online extension for the hypothesis testing of the distribution shift - OnlineRFPerm, when the deployed ML model truly need refresh? With application on a wide variety of types of datasets including Image Data, Text Data, Video Data, Audio Data and Motion Planning Data - with both streaming setting and batch setting.
 
 The benchmark methods include:
 
