@@ -39,7 +39,7 @@ The benchmark methods include:
 
 ------------------------------------------------------------------------
 
-#The diagram for the illustration of this algorithm:
+### The diagram for the illustration of this algorithm:
 
 <img width="1838" height="1206" alt="onlinePermOOB_diagram" src="https://github.com/user-attachments/assets/d4e605ad-9358-4fb8-ab5b-ac28673f7290" />
 
