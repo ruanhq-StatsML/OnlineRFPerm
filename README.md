@@ -62,7 +62,7 @@ Via proper parallelization the computational cost can be reduced by 60\% - 70\%.
 !pip install
 from benchmark_config import MODEL_REGISTRY
 from onlineRFPerm import onlinePermOOB
-from FineTuneBaseline import *
+from FineTuneBaseline import onlinePermOOB_wholedf
 #Generate the stationary data for the null-distribution:
 model_factory = ModelRegistry(
 ntree = 150, ridge_alpha = 0.25,
