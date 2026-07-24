@@ -59,7 +59,6 @@ Via proper parallelization the computational cost can be reduced by 60\% - 70\%,
 
 ### The prototype for the python via the Stationary DGP - should yield no rejection properly
 ```python 
-!pip install
 from benchmark_config import MODEL_REGISTRY
 from onlineRFPerm import onlinePermOOB
 from FineTuneBaseline import onlinePermOOB_wholedf
@@ -123,6 +122,7 @@ for ref_batch_size, batch_size in product(REF_BATCH_LIST, BATCH_SIZE_LIST):
 ### The prototype for R:
 ```R
 #Simulating the Stationary Data-Generating Process, should reject nothing via the OnlineFDR procedure.
+source("onlinePermOOB_core.R")
 set.seed(2026)
 df_X <- matrix(rnorm(10000, 0, 1), nrow = 1000, ncol = 10)
 df_Y <- rnorm(1000)
