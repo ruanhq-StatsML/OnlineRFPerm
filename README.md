@@ -135,24 +135,24 @@ onlinePermOOB_regression_prototype(df_input, rf_spec,
   ref_batch_size = 200, batch_size = 5, method_p = 'Unweighted',
    burnin = 0, train_prop = 0.6)
 - Did not reject anything here via the OnlineFDR procedure but for the fixed alpha procedure, do generate some rejections.
-$start_ind1_addis
-[1] NA
-$start_ind2_addis
-[1] NA
-$start_ind3_addis
-[1] NA
-$start_ind1_saffron
-[1] NA
-$start_ind2_saffron
-[1] NA
-$start_ind3_saffron
-[1] NA
-$start_ind1_fix
-[1] 24
-$start_ind2_fix
-[1] 248
-$start_ind3_fix
-[1] 314
+#$start_ind1_addis
+#[1] NA
+#$start_ind2_addis
+#[1] NA
+#$start_ind3_addis
+#[1] NA
+#$start_ind1_saffron
+#[1] NA
+#$start_ind2_saffron
+#[1] NA
+#$start_ind3_saffron
+#[1] NA
+#$start_ind1_fix
+#[1] 24
+#$start_ind2_fix
+#[1] 248
+#$start_ind3_fix
+#[1] 314
 ```
 
 ### The representation extraction pipelines are displayed as below:
