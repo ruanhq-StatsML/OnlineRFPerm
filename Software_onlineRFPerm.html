@@ -355,31 +355,57 @@ display: none;
 <div id="this-implements-the-online-extension-for-the-hypothesis-testing-of-the-distribution-shift---onlinerfperm" class="section level3">
 <h3>This implements the online extension for the hypothesis testing of
 the distribution shift - OnlineRFPerm</h3>
-<p>The benchmark methods include — Leverage from the bayesian online
-change-point detection: <a href="https://github.com/hildensia/bayesian_changepoint_detection" class="uri">https://github.com/hildensia/bayesian_changepoint_detection</a>
-\ [1] BOCPD(Bayesian Online Change-Point Detection) — Leverage from the
-frouous packages: <a href="https://github.com/IFCA-Advanced-Computing/frouros" class="uri">https://github.com/IFCA-Advanced-Computing/frouros</a> for
-online concept drift detection \ [2] DDM: Data detection method \ [3]
-STEPD: Statistical Test of Equal Proportions Detection<br />
-[4] HDDMA: Hoeffding Drift Detection Method using Moving Average<br />
-[5] ECDDWT: EWMA Concept Drift Detection Warning \ [6] Page-Hinkley: The
-page-hinkley method for online anomaly detection \ —- Leverage the SKM
-methodologies here: \ [7] SKM_KSWIN: Detect change and keeping updated
-statistics \ [8] SKM_ADWIN: Detect change and keeping updated statistics
-through the adaptive windows \ [9] HalfSpaceTrees: Online Anomaly
-Detection methods via the Half-Space Trees \ [10] TwoSample: Online
-Two-sample testing procedure \ —- 11, 12 leverages the martingale
-based/e-value based procedure \ [11] Martingale based procedure:
-Conformal Martingale based Procedure \ [12] E-value based procedure:
-Online Anomaly Detection via E-values(<a href="https://arxiv.org/abs/2410.23614" class="uri">https://arxiv.org/abs/2410.23614</a>) \ —- 13, 14 leverages
-the online FDR control procedure with the enhanced timely detection with
-reduced computational complexity. \<br />
-[13] SAFFRON: Adaptive online FDR control method. \ [14] ADDIS: Adaptive
-Discarding for the conservative Nulls. \ —- 15, 16 leverages the
-asynchronous online multiple testing procedures. \ [15] SAFFRON async:
-Asynchronous SAFFRON procedure with overlap between the neighboring
-batches. \ [16] ADDIS async: Asynchronous ADDIS procedure with overlap
-between the neighboring batches. \</p>
+<p>The benchmark methods include:</p>
+<p><strong><em>Bayesian Online Change-Point Detection &amp; Online Drift
+Detection Frameworks:</em></strong></p>
+<ol style="list-style-type: decimal">
+<li><p><strong>BOCPD</strong> (Bayesian Online Change-Point Detection) —
+Leverage from the <a href="https://github.com/hildensia/bayesian_changepoint_detection">bayesian_changepoint_detection</a>
+package.</p></li>
+<li><p><strong>Online Concept Drift Detection</strong> — Leverage from
+the <a href="https://github.com/IFCA-Advanced-Computing/frouros">frouros</a>
+package:</p>
+<ul>
+<li>DDM: Data detection method</li>
+<li>STEPD: Statistical Test of Equal Proportions Detection</li>
+<li>HDDMA: Hoeffding Drift Detection Method using Moving Average</li>
+<li>ECDDWT: EWMA Concept Drift Detection Warning</li>
+<li>Page-Hinkley: The page-hinkley method for online anomaly
+detection</li>
+</ul></li>
+</ol>
+<p><strong><em>SKM Methodologies:</em></strong></p>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>SKM_KSWIN</strong>: Detect change and keeping updated
+statistics</li>
+<li><strong>SKM_ADWIN</strong>: Detect change and keeping updated
+statistics through the adaptive windows</li>
+<li><strong>HalfSpaceTrees</strong>: Online Anomaly Detection methods
+via the Half-Space Trees</li>
+<li><strong>TwoSample</strong>: Online Two-sample testing procedure</li>
+</ol>
+<p><strong><em>Martingale / E-Value Based Procedures:</em></strong></p>
+<ol start="7" style="list-style-type: decimal">
+<li><strong>Martingale based procedure</strong>: Conformal Martingale
+based Procedure</li>
+<li><strong>E-value based procedure</strong>: Online Anomaly Detection
+via E-values (<a href="https://arxiv.org/abs/2410.23614" class="uri">https://arxiv.org/abs/2410.23614</a>)</li>
+</ol>
+<p><strong><em>Online FDR Control Procedures (with enhanced timely
+detection and reduced computational complexity):</em></strong></p>
+<ol start="9" style="list-style-type: decimal">
+<li><strong>SAFFRON</strong>: Adaptive online FDR control method</li>
+<li><strong>ADDIS</strong>: Adaptive Discarding for the conservative
+Nulls</li>
+</ol>
+<p><strong><em>Asynchronous Online Multiple Testing Procedures (with
+overlap between neighboring batches):</em></strong></p>
+<ol start="11" style="list-style-type: decimal">
+<li><strong>SAFFRON async</strong>: Asynchronous SAFFRON procedure with
+overlap between the neighboring batches</li>
+<li><strong>ADDIS async</strong>: Asynchronous ADDIS procedure with
+overlap between the neighboring batches</li>
+</ol>
 <hr />
 <p>#The diagram for the illustration of this algorithm:</p>
 <div class="figure" style="text-align: center">
@@ -506,6 +532,32 @@ $start_ind2_fix
 [1] 248
 $start_ind3_fix
 [1] 314</code></pre>
+</div>
+<div id="the-representation-extraction-pipelines-are-displayed-as-below" class="section level3">
+<h3>The representation extraction pipelines are displayed as below:</h3>
+<p><strong><em>Audio &amp; Image Embedding Extraction:</em></strong></p>
+<ul>
+<li>Audio Embedding Extraction: <a href="https://colab.research.google.com/drive/1L4Ock3VwhmU1_OoiQhhtUak_KGMPTohV#scrollTo=Wn6M2NBC2rUa" class="uri">https://colab.research.google.com/drive/1L4Ock3VwhmU1_OoiQhhtUak_KGMPTohV#scrollTo=Wn6M2NBC2rUa</a></li>
+<li>Image Embedding Extraction: <a href="https://colab.research.google.com/drive/1MH0lZRno8bQetxjMNDeoRn31sI5tipj4#scrollTo=RXHhe3KUhTht" class="uri">https://colab.research.google.com/drive/1MH0lZRno8bQetxjMNDeoRn31sI5tipj4#scrollTo=RXHhe3KUhTht</a></li>
+</ul>
+<p><strong><em>Text &amp; Video Embedding Extraction:</em></strong></p>
+<ul>
+<li>Text Embedding Extraction: <a href="https://colab.research.google.com/drive/1lYQFzql9wtXdPDvEh2QQ7q7shlFMjCbv" class="uri">https://colab.research.google.com/drive/1lYQFzql9wtXdPDvEh2QQ7q7shlFMjCbv</a></li>
+<li>Video Embedding Extraction: <a href="https://colab.research.google.com/drive/1InFg_qWdiS0aGMRVSyO0oB5uN92n3sSd#scrollTo=hhyJ_TWvqlK6" class="uri">https://colab.research.google.com/drive/1InFg_qWdiS0aGMRVSyO0oB5uN92n3sSd#scrollTo=hhyJ_TWvqlK6</a></li>
+</ul>
+<p><strong><em>Point Cloud &amp; Trajectory Data
+Processing:</em></strong></p>
+<ul>
+<li>Point Cloud Extraction Pipeline: <a href="https://colab.research.google.com/drive/1R-NvLj-HwKHvBwKcycVRPZtaYXj0XbeH#scrollTo=1LI62GoYS2QJ" class="uri">https://colab.research.google.com/drive/1R-NvLj-HwKHvBwKcycVRPZtaYXj0XbeH#scrollTo=1LI62GoYS2QJ</a></li>
+<li>Waymo Moving Trajectory Data: <a href="https://colab.research.google.com/drive/168X4qmnCG9hS4WKkaBId7q-j44pLZv-M" class="uri">https://colab.research.google.com/drive/168X4qmnCG9hS4WKkaBId7q-j44pLZv-M</a></li>
+</ul>
+<p><strong><em>Data Manipulation &amp; Feature
+Engineering:</em></strong></p>
+<ul>
+<li>ChronoBerg Data Manipulation Scripts: <a href="https://colab.research.google.com/drive/1-gvoK9pNUK3EPuS1eA9jqVlKYdCGg1zH#scrollTo=iWRIS61JAk10" class="uri">https://colab.research.google.com/drive/1-gvoK9pNUK3EPuS1eA9jqVlKYdCGg1zH#scrollTo=iWRIS61JAk10</a></li>
+<li>The Walmart M5 reformulated data after Feature Engineering across
+each of the shop: <a href="https://drive.google.com/file/d/1FOgYdNNTYN4Ztj8HdR2KI9t7G1hixHad/view?usp=sharing" class="uri">https://drive.google.com/file/d/1FOgYdNNTYN4Ztj8HdR2KI9t7G1hixHad/view?usp=sharing</a></li>
+</ul>
 </div>
 
 
