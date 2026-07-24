@@ -2,8 +2,6 @@
 
 The benchmark methods include:
 
-***Bayesian Online Change-Point Detection & Online Drift Detection Frameworks:***
-
 1. **BOCPD** (Bayesian Online Change-Point Detection) — Leverage from the [bayesian_changepoint_detection](https://github.com/hildensia/bayesian_changepoint_detection) package.
 
 2. **Online Concept Drift Detection** — Leverage from the [frouros](https://github.com/IFCA-Advanced-Computing/frouros) package:
@@ -13,27 +11,29 @@ The benchmark methods include:
    - ECDDWT: EWMA Concept Drift Detection Warning
    - Page-Hinkley: The page-hinkley method for online anomaly detection
 
+3. **rrcf** - Leverage from the [rrcf](https://github.com/kLabUM/rrcf) package.
+
 ***SKM Methodologies:***
 
-3. **SKM_KSWIN**: Detect change and keeping updated statistics
-4. **SKM_ADWIN**: Detect change and keeping updated statistics through the adaptive windows
-5. **HalfSpaceTrees**: Online Anomaly Detection methods via the Half-Space Trees
-6. **TwoSample**: Online Two-sample testing procedure
+4. **SKM_KSWIN**: Detect change and keeping updated statistics
+5. **SKM_ADWIN**: Detect change and keeping updated statistics through the adaptive windows
+6. **HalfSpaceTrees**: Online Anomaly Detection methods via the Half-Space Trees
+7. **TwoSample**: Online Two-sample testing procedure
 
 ***Martingale / E-Value Based Procedures:***
 
-7. **Martingale based procedure**: Conformal Martingale based Procedure
-8. **E-value based procedure**: Online Anomaly Detection via E-values (https://arxiv.org/abs/2410.23614)
+8. **Martingale based procedure**: Conformal Martingale based Procedure
+9. **E-value based procedure**: Online Anomaly Detection via E-values (https://arxiv.org/abs/2410.23614)
 
 ***Online FDR Control Procedures (with enhanced timely detection and reduced computational complexity):***
 
-9. **SAFFRON**: Adaptive online FDR control method
-10. **ADDIS**: Adaptive Discarding for the conservative Nulls
+10. **SAFFRON**: Adaptive online FDR control method
+11. **ADDIS**: Adaptive Discarding for the conservative Nulls
 
 ***Asynchronous Online Multiple Testing Procedures (with overlap between neighboring batches):***
 
-11. **SAFFRON async**: Asynchronous SAFFRON procedure with overlap between the neighboring batches
-12. **ADDIS async**: Asynchronous ADDIS procedure with overlap between the neighboring batches
+12. **SAFFRON async**: Asynchronous SAFFRON procedure with overlap between the neighboring batches
+13. **ADDIS async**: Asynchronous ADDIS procedure with overlap between the neighboring batches
 
 
 
