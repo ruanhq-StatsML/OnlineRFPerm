@@ -1,5 +1,5 @@
 '''
-Benchmark Methods for comparisons:
+Benchmark Methods for comparisons with the useful util functions.
 '''
 def online_fdr_lord(pvals, alpha=0.05):
     n = len(pvals)
