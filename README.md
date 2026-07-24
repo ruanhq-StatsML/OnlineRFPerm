@@ -41,23 +41,20 @@ The benchmark methods include:
 
 #The diagram for the illustration of this algorithm:
 
-```{r, echo=FALSE, out.width="50%", fig.align="center", fig.cap="Your Caption"}
-knitr::include_graphics("utils/onlinePermOOB_diagram.png")
-```
+<img width="1838" height="1206" alt="onlinePermOOB_diagram" src="https://github.com/user-attachments/assets/d4e605ad-9358-4fb8-ab5b-ac28673f7290" />
+
 
 
 
 ### Modality Agnostic Nature of this procedure 
 The proposed methodology possess very high flexibility with the model agnostic procedure with extensions on a wide variety of types of datasets, ranging from the image data, text data, video data, audio data as well as the motion planning dataset.
 
-```{r, echo=FALSE, out.width="50%", fig.align="center", fig.cap="Your Caption"}
-knitr::include_graphics("utils/OnlineStreamingTesting.png")
-```
+<img width="2458" height="1252" alt="OnlineStreamingTesting" src="https://github.com/user-attachments/assets/70bf8ed6-cfcb-4954-92d1-fa1c25576f7f" />
 
 Via proper parallelization the computational cost can be reduced by 60\% - 70\%.
-```{r, echo=FALSE, out.width="50%", fig.align="center", fig.cap="Your Caption"}
-knitr::include_graphics("utils/parallelcomparison.png")
-```
+
+<img width="900" height="950" alt="parallelcomparison" src="https://github.com/user-attachments/assets/ad4bba94-24e9-4d48-9f5e-bcbb260d2cb2" />
+
 
 
 ### The prototype for the python via the Stationary DGP - should yield no rejection properly
