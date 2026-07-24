@@ -51,7 +51,7 @@ The proposed methodology possess very high flexibility with the model agnostic p
 
 <img width="2458" height="1252" alt="OnlineStreamingTesting" src="https://github.com/user-attachments/assets/70bf8ed6-cfcb-4954-92d1-fa1c25576f7f" />
 
-Via proper parallelization the computational cost can be reduced by 60\% - 70\%.
+Via proper parallelization the computational cost can be reduced by 60\% - 70\%, which is applicable for literally any permutation test.
 
 <img width="900" height="950" alt="parallelcomparison" src="https://github.com/user-attachments/assets/ad4bba94-24e9-4d48-9f5e-bcbb260d2cb2" />
 
