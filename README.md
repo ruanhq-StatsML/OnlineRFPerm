@@ -1,4 +1,5 @@
-## This repo implements the online extension for the hypothesis testing of the distribution shift - OnlineRFPerm, when the deployed ML model truly need refresh? 
+# OnlineRFPerm: Detecting Change in ever-evolving data-streams
+## This repo implements the online extension for the hypothesis testing of the distribution shift - OnlineRFPerm, to provide statistically rigorous, theoretically guaranteed answer about when the deployed ML model truly need refresh? 
 
 ### 1. With application on a wide variety of types of datasets including Image Data, Text Data, Video Data, Audio Data and Motion Planning Data - with both streaming setting and batch setting.
 ### 2. Equipped with the online multiple testing procedures, it efficiently control the mFDR(marginal FDR) under finite sample-size and the FDR asymptotically. The False Alarm Rate is fairly robust w.r.t the hyperparameters in the OnlineFDR procedure
