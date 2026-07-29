@@ -1,8 +1,11 @@
-### This implements the online extension for the hypothesis testing of the distribution shift - OnlineRFPerm
+# OnlineRFPerm: Detecting Change in ever-evolving data-streams
+## This repo implements the online extension for the hypothesis testing of the distribution shift - OnlineRFPerm, to provide statistically rigorous, theoretically guaranteed answer about when the deployed ML model truly need refresh? 
+
+### 1. With application on a wide variety of types of datasets including Image Data, Text Data, Video Data, Audio Data and Motion Planning Data - under both streaming setting and batch setting.
+### 2. Equipped with the online multiple testing procedures, it efficiently control the mFDR(marginal FDR) under finite sample-size and the FDR asymptotically. The False Alarm Rate is fairly robust w.r.t the hyperparameters in the OnlineFDR procedure.
+### 3. The Random Forest Component Model demonstrated robustness and efficiency in online testing, help people isolate the OOD itself as long as the original model fits ok - although it can be generalized to arbitrary modalities of data.
 
 The benchmark methods include:
-
-***Bayesian Online Change-Point Detection & Online Drift Detection Frameworks:***
 
 1. **BOCPD** (Bayesian Online Change-Point Detection) — Leverage from the [bayesian_changepoint_detection](https://github.com/hildensia/bayesian_changepoint_detection) package.
 
@@ -13,33 +16,35 @@ The benchmark methods include:
    - ECDDWT: EWMA Concept Drift Detection Warning
    - Page-Hinkley: The page-hinkley method for online anomaly detection
 
+3. **rrcf** - Leverage from the [rrcf](https://github.com/kLabUM/rrcf) package.
+
 ***SKM Methodologies:***
 
-3. **SKM_KSWIN**: Detect change and keeping updated statistics
-4. **SKM_ADWIN**: Detect change and keeping updated statistics through the adaptive windows
-5. **HalfSpaceTrees**: Online Anomaly Detection methods via the Half-Space Trees
-6. **TwoSample**: Online Two-sample testing procedure
+4. **SKM_KSWIN**: Detect change and keeping updated statistics
+5. **SKM_ADWIN**: Detect change and keeping updated statistics through the adaptive windows
+6. **HalfSpaceTrees**: Online Anomaly Detection methods via the Half-Space Trees
+7. **TwoSample**: Online Two-sample testing procedure
 
 ***Martingale / E-Value Based Procedures:***
 
-7. **Martingale based procedure**: Conformal Martingale based Procedure
-8. **E-value based procedure**: Online Anomaly Detection via E-values (https://arxiv.org/abs/2410.23614)
+8. **Martingale based procedure**: Conformal Martingale based Procedure
+9. **E-value based procedure**: Online Anomaly Detection via E-values (https://arxiv.org/abs/2410.23614)
 
 ***Online FDR Control Procedures (with enhanced timely detection and reduced computational complexity):***
 
-9. **SAFFRON**: Adaptive online FDR control method
-10. **ADDIS**: Adaptive Discarding for the conservative Nulls
+10. **SAFFRON**: Adaptive online FDR control method
+11. **ADDIS**: Adaptive Discarding for the conservative Nulls
 
 ***Asynchronous Online Multiple Testing Procedures (with overlap between neighboring batches):***
 
-11. **SAFFRON async**: Asynchronous SAFFRON procedure with overlap between the neighboring batches
-12. **ADDIS async**: Asynchronous ADDIS procedure with overlap between the neighboring batches
+12. **SAFFRON async**: Asynchronous SAFFRON procedure with overlap between the neighboring batches
+13. **ADDIS async**: Asynchronous ADDIS procedure with overlap between the neighboring batches
 
 
 
 ------------------------------------------------------------------------
 
-#The diagram for the illustration of this algorithm:
+### The diagram for the illustration of this algorithm:
 
 <img width="1838" height="1206" alt="onlinePermOOB_diagram" src="https://github.com/user-attachments/assets/d4e605ad-9358-4fb8-ab5b-ac28673f7290" />
 
@@ -51,7 +56,7 @@ The proposed methodology possess very high flexibility with the model agnostic p
 
 <img width="2458" height="1252" alt="OnlineStreamingTesting" src="https://github.com/user-attachments/assets/70bf8ed6-cfcb-4954-92d1-fa1c25576f7f" />
 
-Via proper parallelization the computational cost can be reduced by 60\% - 70\%.
+Via proper parallelization the computational cost can be reduced by 60\% - 70\%, which is applicable for literally any permutation test.
 
 <img width="900" height="950" alt="parallelcomparison" src="https://github.com/user-attachments/assets/ad4bba94-24e9-4d48-9f5e-bcbb260d2cb2" />
 
@@ -59,10 +64,9 @@ Via proper parallelization the computational cost can be reduced by 60\% - 70\%.
 
 ### The prototype for the python via the Stationary DGP - should yield no rejection properly
 ```python 
-!pip install
 from benchmark_config import MODEL_REGISTRY
 from onlineRFPerm import onlinePermOOB
-from FineTuneBaseline
+from FineTuneBaseline import onlinePermOOB_wholedf
 #Generate the stationary data for the null-distribution:
 model_factory = ModelRegistry(
 ntree = 150, ridge_alpha = 0.25,
@@ -123,6 +127,7 @@ for ref_batch_size, batch_size in product(REF_BATCH_LIST, BATCH_SIZE_LIST):
 ### The prototype for R:
 ```R
 #Simulating the Stationary Data-Generating Process, should reject nothing via the OnlineFDR procedure.
+source("onlinePermOOB_core.R")
 set.seed(2026)
 df_X <- matrix(rnorm(10000, 0, 1), nrow = 1000, ncol = 10)
 df_Y <- rnorm(1000)
@@ -135,24 +140,24 @@ onlinePermOOB_regression_prototype(df_input, rf_spec,
   ref_batch_size = 200, batch_size = 5, method_p = 'Unweighted',
    burnin = 0, train_prop = 0.6)
 - Did not reject anything here via the OnlineFDR procedure but for the fixed alpha procedure, do generate some rejections.
-$start_ind1_addis
-[1] NA
-$start_ind2_addis
-[1] NA
-$start_ind3_addis
-[1] NA
-$start_ind1_saffron
-[1] NA
-$start_ind2_saffron
-[1] NA
-$start_ind3_saffron
-[1] NA
-$start_ind1_fix
-[1] 24
-$start_ind2_fix
-[1] 248
-$start_ind3_fix
-[1] 314
+#$start_ind1_addis
+#[1] NA
+#$start_ind2_addis
+#[1] NA
+#$start_ind3_addis
+#[1] NA
+#$start_ind1_saffron
+#[1] NA
+#$start_ind2_saffron
+#[1] NA
+#$start_ind3_saffron
+#[1] NA
+#$start_ind1_fix
+#[1] 24
+#$start_ind2_fix
+#[1] 248
+#$start_ind3_fix
+#[1] 314
 ```
 
 ### The representation extraction pipelines are displayed as below:
