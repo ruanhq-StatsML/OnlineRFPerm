@@ -42,7 +42,7 @@ The benchmark methods include:
 
 ***The datasets we leveraged include the following, ranging from tabular, image, text, video, audio, and the motion planning data***
 
-<img width="1200" height="1000" alt="Screenshot 2026-07-30 at 15 36 49" src="https://github.com/user-attachments/assets/d869288b-f85e-4b01-84e2-a0165d1990e2" />
+<img width="1200" height="1100" alt="Screenshot 2026-07-30 at 15 36 49" src="https://github.com/user-attachments/assets/d869288b-f85e-4b01-84e2-a0165d1990e2" />
 
 
 
