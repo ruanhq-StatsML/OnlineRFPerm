@@ -139,7 +139,7 @@ rf_spec <- rand_forest(mtry = 5, trees = 100) %>%
 onlinePermOOB_regression_prototype(df_input, rf_spec, 
   ref_batch_size = 200, batch_size = 5, method_p = 'Unweighted',
    burnin = 0, train_prop = 0.6)
-- Did not reject anything here via the OnlineFDR procedure but for the fixed alpha procedure, do generate some rejections.
+#- Did not reject anything here via the OnlineFDR procedure but for the fixed alpha procedure, do generate some rejections.
 #$start_ind1_addis
 #[1] NA
 #$start_ind2_addis
