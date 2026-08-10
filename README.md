@@ -40,6 +40,10 @@ The benchmark methods include:
 12. **SAFFRON async**: Asynchronous SAFFRON procedure with overlap between the neighboring batches
 13. **ADDIS async**: Asynchronous ADDIS procedure with overlap between the neighboring batches
 
+***The datasets we leveraged include the following, ranging from tabular, image, text, video, audio, and the motion planning data***
+
+<img width="1200" height="1100" alt="Screenshot 2026-07-30 at 15 36 49" src="https://github.com/user-attachments/assets/d869288b-f85e-4b01-84e2-a0165d1990e2" />
+
 
 
 ------------------------------------------------------------------------
@@ -139,7 +143,7 @@ rf_spec <- rand_forest(mtry = 5, trees = 100) %>%
 onlinePermOOB_regression_prototype(df_input, rf_spec, 
   ref_batch_size = 200, batch_size = 5, method_p = 'Unweighted',
    burnin = 0, train_prop = 0.6)
-- Did not reject anything here via the OnlineFDR procedure but for the fixed alpha procedure, do generate some rejections.
+#- Did not reject anything here via the OnlineFDR procedure but for the fixed alpha procedure, do generate some rejections.
 #$start_ind1_addis
 #[1] NA
 #$start_ind2_addis
