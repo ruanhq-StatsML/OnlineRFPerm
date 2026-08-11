@@ -49,11 +49,11 @@ The benchmark methods include:
 ------------------------------------------------------------------------
 
 ### The diagram for the illustration of this algorithm:
-<img width="1972" height="1420" alt="onlinePermOOB_diagram" src="https://github.com/user-attachments/assets/c0b1c6a8-a6e5-41cb-903e-33043c5b39e8" />
+<img width="2500" height="1500" alt="onlinePermOOB_diagram" src="https://github.com/user-attachments/assets/c0b1c6a8-a6e5-41cb-903e-33043c5b39e8" />
 
 
 ### Use case for leveraging the RFPerm for enhancing the LLM-guided Data Generation Alignment.
-<img width="1980" height="1402" alt="RFPerm_coldstart" src="https://github.com/user-attachments/assets/b77c5547-6def-4d03-b4b1-8a4a152bca8e" />
+<img width="1980" height="1302" alt="RFPerm_coldstart" src="https://github.com/user-attachments/assets/b77c5547-6def-4d03-b4b1-8a4a152bca8e" />
 
 
 
