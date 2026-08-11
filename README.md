@@ -53,8 +53,9 @@ The benchmark methods include:
 
 
 ### Use case for leveraging the RFPerm for enhancing the LLM-guided Data Generation Alignment.
-<img width="1980" height="1302" alt="RFPerm_coldstart" src="https://github.com/user-attachments/assets/b77c5547-6def-4d03-b4b1-8a4a152bca8e" />
+<img width="2080" height="1302" alt="RFPerm_coldstart" src="https://github.com/user-attachments/assets/b77c5547-6def-4d03-b4b1-8a4a152bca8e" />
 
+The RFPerm is highly robust and efficient under very small sample-size, specifically, making it directly portable and efficient for deployment - redo the test for each of the new observation.
 
 
 ### Modality Agnostic Nature of this procedure 
