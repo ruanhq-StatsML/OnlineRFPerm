@@ -68,6 +68,10 @@ Via proper parallelization the computational cost can be reduced by 60\% - 70\%,
 
 <img width="900" height="950" alt="parallelcomparison" src="https://github.com/user-attachments/assets/ad4bba94-24e9-4d48-9f5e-bcbb260d2cb2" />
 
+### Serve as a clever covariate for adapting the distribution shift 
+Via incorporating an optional gating mechanism, the distribution shift adaptation procedure can efficiently adapt for the change of the data with an optional fallback procedure - which can serve as a key component of the full-looped product landing use cases - both from the variable importance level and the population subset level.
+<img width="1520" height="746" alt="vimp_monitoring_closed_loop" src="https://github.com/user-attachments/assets/c7e88ba1-8b83-4311-9bb2-9f3e3dfcf1ce" />
+
 
 
 ### The prototype for the python via the Stationary DGP - should yield no rejection properly
