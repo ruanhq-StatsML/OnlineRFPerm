@@ -6,6 +6,11 @@
 ### 2. Equipped with the online multiple testing procedures, it efficiently control the mFDR(marginal FDR) under finite sample-size and the FDR asymptotically. The False Alarm Rate is fairly robust w.r.t the hyperparameters in the OnlineFDR procedure.
 ### 3. The Random Forest Component Model demonstrated robustness and efficiency in online testing, help people isolate the OOD itself as long as the original model fits ok - although it can be generalized to arbitrary modalities of data.
 
+
+The Overview of the developed Statistical Methodologies to boost the deployed ML systems. 
+<img width="2504" height="1410" alt="six_methods_ops" src="https://github.com/user-attachments/assets/635877ae-a1f6-4774-b175-59346b111a9b" />
+
+
 The benchmark methods include:
 
 1. **BOCPD** (Bayesian Online Change-Point Detection) — Leverage from the [bayesian_changepoint_detection](https://github.com/hildensia/bayesian_changepoint_detection) package.
