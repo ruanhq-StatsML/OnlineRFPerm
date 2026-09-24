@@ -50,6 +50,8 @@ The benchmark methods include:
 
 <img width="1200" height="1100" alt="Screenshot 2026-07-30 at 15 36 49" src="https://github.com/user-attachments/assets/d869288b-f85e-4b01-84e2-a0165d1990e2" />
 
+***The model agnostic nature for this procedure enables this to be applicable to the LLM inference***
+14. **Continuous-Time LLM Inference**: Multiple-steps inference for the large-language models in the reasoning paths.
 
 
 ------------------------------------------------------------------------
